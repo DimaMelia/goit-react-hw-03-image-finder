@@ -48,7 +48,7 @@ class ImageGallery extends Component {
       (prevState) => ({
         page: prevState.page + 1,
       }),
-      this.onFetch(this.props.query, this.state.page)
+      this.onFetch(this.props.query, this.state.page + 1)
     );
   };
 
